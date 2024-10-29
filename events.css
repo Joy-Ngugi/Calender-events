@@ -1,0 +1,49 @@
+/* table, th, td {
+    border:1px solid black;
+    width:80%;
+}
+th{
+    text-align: center;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(purple, black);
+    background-attachment: fixed;
+    color:aliceblue
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border:2px solid #2bff80;
+    text-align: left;
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: rgb(230, 202, 255);
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  input{
+    width: 120px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 25%;
+  }

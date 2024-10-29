@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calender events</title>
-    <script src="events.js"></script>
-</head>
-<body>
-    <h1>Event Management</h1>
     
-    <table id="eventsTable">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Date</th>
-                <th>Location</th>
-                <th>Attendees</th>
-                
-            </tr>
-        </thead>
-        <tbody id="upcoming">
+    <link href="events.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Event Management</h1>
 
-        </tbody>
+    <table id="upcomingEventsTable">
+      <thead>
+        <tr>
+          <th>TITLE</th>
+          <th>DATE</th>
+          <th>LOCATION</th>
+          <th>ATTENDEES</th>
+          
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
     </table>
-    <!-- <div>
-        <label for="eventTitle">Event Title:</label>
-        <input type="text" id="eventTitle" placeholder="Event Title">
-        <br><br>
-        <label for="attendeeName">Attendee Name:</label>
-        <input type="text" id="attendeeName" placeholder="Attendee Name">
-        <br><br>
-        <button onclick="addAttendee(eventTitle, attendee)">Add Attendee</button>
-        <button onclick="findMostAttendedEvent()">Find Event with Most Attendees</button>
-        <button onclick="deleteEvent(Wedding)">Delete Event</button>
-    </div>
-     -->
-</body>
+    <h2>Events in the next 7 days</h2>
+    <table id="eventstable">
+      <thead>
+        <tr>
+          <th>TITLE</th>
+          <th>DATE</th>
+          <th>LOCATION</th>
+          <th>ATTENDEES</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <h2>Add Attendee</h2>
+    <div class="input-field">
+      <input type="text" id="eventTitle" placeholder="Event Title">
+      <input type="text" id="attendeeName" placeholder="Attendee Name">
+      <button  id="addAttendeeButton">Add Attendee</button>
+      <h2>Delete Event</h2>
+      <input type="text" id="deleteEventTitle" placeholder="Event Title">
+      <button id="deleteEventButton">Delete Event</button>
+  </div>
+  <button onclick="convertToJSON()">Convert Events to JSON</button>
+    <script src="events.js"></script> 
+  </body>
 </html>
